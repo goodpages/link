@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>写作素材</title>
+    <title>閸愭瑤缍旂槐鐘虫綏</title>
     <style>
         .frame-container {
             position: fixed;
@@ -31,13 +31,13 @@
 
     </style>
     <script>
-        // 父页面暴露一个全局方法，给iframeA调用，用于修改iframeB的地址
+        // 閻栧爼銆夐棃銏℃瘹闂囪弓绔存稉顏勫弿鐏為弬瑙勭《閿涘瞼绮癷frameA鐠嬪啰鏁ら敍宀鏁ゆ禍搴濇叏閺绛癴rameB閻ㄥ嫬婀撮崸
         window.changeIframeUrl = function(newUrl) {
-            // 1. 通过id获取目标iframeB的DOM元素
+            // 1. 闁俺绻僫d閼惧嘲褰囬惄顔界垼iframeB閻ㄥ嚍OM閸忓啰绀
             const iframeB = document.getElementById('content');
-            // 2. 核心代码：修改iframeB的地址（两种写法等价，任选其一）
+            // 2. 閺嶇ǹ绺炬禒锝囩垳閿涙矮鎱ㄩ弨绛癴rameB閻ㄥ嫬婀撮崸閿涘牅琚辩粔宥呭晸濞夋洜鐡戞禒鍑ょ礉娴犲澶婂従娑撻敍
             iframeB.contentWindow.location.href = newUrl; 
-            // iframeB.src = newUrl; // 写法2，效果完全一样，更简洁
+            // iframeB.src = newUrl; // 閸愭瑦纭2閿涘本鏅ラ弸婊冪暚閸忋劋绔撮弽鍑ょ礉閺囧鐣濆ú
         }
     </script>
 </head>
